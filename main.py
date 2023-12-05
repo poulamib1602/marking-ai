@@ -3,10 +3,10 @@ import streamlit as st
 import requests
 
 # Fetch CSRF token
-csrf_token_url = "http://15.206.91.219/get-csrf-token/"
+csrf_token_url = "http://3.27.132.95/get-csrf-token/"
 csrf_token = requests.get(csrf_token_url).json()['csrf_token']
 print("csrf_token", csrf_token)
-django_api_url = 'http://15.206.91.219/upload_pdf/'
+django_api_url = 'http://3.27.132.95/upload_pdf/'
 # Streamlit app
 # Set the sidebar title with larger and bolder styling
 st.sidebar.markdown("<h1 style='font-size: 34px; font-weight: bold;'>MarkingAI</h1>", unsafe_allow_html=True)
